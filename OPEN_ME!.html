@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Message</title>
+    <style>
+        /* Importing elegant fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Sacramento&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #a8c0ff, #3f5efb); /* Soft light gradient background (blue & light purple) */
+            min-height: 100vh;
+            margin: 0;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Title Styling */
+        .birthday-title {
+            font-family: 'Dancing Script', cursive;
+            color: #ff4d4d; /* Soft red color */
+            font-size: 8vw; /* Relative size (adjusts with screen size) */
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Glow effect */
+            margin-top: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Birthday message styling */
+        .birthday-message {
+            font-family: 'Sacramento', cursive;
+            font-size: 4vw; /* Relative size (adjusts with screen size) */
+            line-height: 1.8;
+            margin: 20px auto;
+            max-width: 650px;
+            opacity: 0.85;
+            animation: fadeIn 2s ease-out 2s;
+        }
+
+        /* Keyframe animation for smooth fading */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Bold style for "From:" and name */
+        .from-name {
+            font-family: 'Courier New', monospace;
+            font-size: 5vw; /* Relative size */
+            color: #ffffff;
+            font-weight: bold;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-out 3s;
+        }
+
+        /* Subtle shadow effect for text */
+        .from-name span {
+            color: #ff4d4d; /* Highlighted red for emphasis */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .birthday-title {
+                font-size: 10vw; /* Bigger title size for mobile */
+            }
+            .birthday-message {
+                font-size: 5vw; /* Adjust message size for better readability */
+            }
+            .from-name {
+                font-size: 6vw; /* Adjust "From" text for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Title with large black heart emoji -->
+<h1 class="birthday-title">
+    HBD GHURIYA 🖤
+</h1>
+
+<!-- Birthday message centered -->
+<div class="birthday-message">
+    <p>🎂 On this special day, I wish you all the happiness in the world!</p>
+    <p>🌟 May your year be filled with love, laughter, and countless blessings.</p>
+    <p>💖 Your presence lights up every moment and fills hearts with joy.</p>
+    <p>🌹 Happy Birthday, Ghuriya! May all your dreams come true!</p>
+    <p>🌈 Here’s to a beautiful journey ahead, filled with smiles and success!</p>
+</div>
+
+<!-- Ending words with stylized "Yasir" -->
+<p class="from-name">
+    From: <span>ᎩᏗᏕᎥᏒ _ᏗᏕᏂᏒᏗᎦ</span>
+</p>
+
+</body>
+</html>
